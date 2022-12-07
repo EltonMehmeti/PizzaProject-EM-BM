@@ -1,0 +1,211 @@
+* {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: antiquewhite; */
+  height: 500vh;
+}
+/* HeaderMenu */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: red;
+  position: sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.OrderButton {
+  background-color: whitesmoke;
+  color: red;
+  border-radius: 30px;
+  font-weight: bold;
+  width: 143px;
+  height: 42px;
+  border: none;
+  margin-left: 60px;
+}
+.logo {
+  padding: 10px;
+}
+.HamMenu {
+  color: white;
+  cursor: pointer;
+}
+/* NavLinks */
+.nav-none {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
+.nav-active {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  width: 180px;
+
+  float: right;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  border-radius: 0px 0px 20px 0px;
+}
+.links {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 20px;
+}
+
+#sP1 {
+  color: #f43127;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+#sH1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-family: "Roboto Mono", monospace;
+}
+
+#sP2 {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 25px 50px 25px 50px;
+  text-align: center;
+}
+
+#sButton {
+  background-color: #f43127;
+  color: #ffff;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#firstSection {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f2f0f1;
+}
+/* Elton MenuLIst */
+
+.MenuList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 150px;
+}
+.overlay {
+  flex-direction: column;
+  display: flex;
+  background-color: white;
+  height: 380px;
+  width: 343px;
+  border-radius: 30px;
+  background-color: transparent;
+  align-items: center;
+  row-gap: 10px;
+}
+:hover.overlay {
+  height: 420px;
+  transition: 0.3s ease;
+  background-color: #fcb302;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  min-height: 180px;
+  min-width: 343px;
+  background-color: red;
+  border-radius: 20px 20px 80px 80px;
+}
+.seeMenu {
+  width: 146px;
+  height: 55px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* Pizzass */
+.pizzaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+.pizzas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+  border-radius: 20px;
+  height: 443px;
+  width: 343px;
+  border: 0.1px solid rgb(151, 135, 135);
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 2000px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-start;
+}
+
+@media only screen and (min-width: 992px) {
+  .MenuList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 200px;
+    padding-right: 200px;
+    gap: 100px;
+    height: 40vh;
+  }
+  .pizzaContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
