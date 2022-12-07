@@ -21,6 +21,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 .OrderButton {
   background-color: whitesmoke;
@@ -172,9 +173,16 @@ body {
   gap: 30px;
   flex-direction: column;
   border-radius: 20px;
-  height: 443px;
-  width: 343px;
-  border: 0.1px solid rgb(151, 135, 135);
+  height: 500px;
+  width: 350px;
+  border: 0.1px solid rgb(215, 207, 207);
+}
+:hover.pizzas {
+  border: 0.1px solid transparent;
+
+  box-shadow: 5px 10px 18px #888888;
+  transition: 0.1s all;
+  background-color: rgb(253, 253, 232);
 }
 .circle {
   width: 50px;
@@ -186,7 +194,76 @@ body {
   justify-content: center;
   justify-self: flex-start;
 }
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.pizza-desc {
+  color: #5a5555;
+  padding: 8px;
+  font-size: 1.5vh;
+  text-align: center;
+}
+/* Discount */
+.discount {
+  margin-top: 50px;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.discount-cards {
+  z-index: 9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 280px;
+}
+.dis-img {
+  border-radius: 30px;
+  width: 100%;
+}
+:hover.dis-img {
+  /* transform: scale(1.1);
+  transition: 1s all; */
+}
+.dis-title {
+  font-size: 40px;
+  position: absolute;
+  color: white;
+  padding: 10px;
+  font-weight: bolder;
+}
+.dis-details {
+  top: 90%;
+  color: white;
+  position: absolute;
+}
+/* Footer */
+.footer {
+  padding: 30px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, white, #fcc3c0);
+  gap: 40px;
+}
+.adress {
+  font-weight: 400;
+  color: grey;
+}
 
+.sc {
+  margin-left: 20px;
+  width: 7%;
+}
 @media only screen and (min-width: 992px) {
   .MenuList {
     display: flex;
