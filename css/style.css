@@ -51,6 +51,10 @@ body {
   position: sticky;
   top: 80px;
   width: 180px;
+
+
+  z-index: 10;
+
   float: right;
   display: flex;
   flex-direction: column;
