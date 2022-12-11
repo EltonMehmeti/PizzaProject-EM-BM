@@ -9,16 +9,27 @@
     <title>LogIn & Register</title>
   </head>
   <body>
+    <h1>PizzaHome</h1>
     <div class="main">
+      <!-- SignIn -->
       <div class="login">
         <h1 style="color: white">LOGIN</h1>
         <h4>Email</h4>
         <input class="inpt" type="email" name="" id="email" />
         <h4>Password</h4>
         <input class="inpt" type="password" name="" id="password" />
+        <p id="passwordM" style="display: none; color: red; font-size: 15px">
+          Password should be greater than 8
+        </p>
         <button class="btn" id="signinL">Sign In</button>
-        <h3 class="signup" style="cursor: pointer">SignUp</h3>
+        <h3
+          class="signup"
+          style="cursor: pointer; text-decoration: underline; color: blue"
+        >
+          SignUp
+        </h3>
       </div>
+      <!-- Sign Up -->
       <div class="register">
         <h1 style="color: white">REGISTER</h1>
         <h4>Name and LastName</h4>
@@ -26,11 +37,20 @@
         <h4>Email</h4>
         <input class="inpt" type="email" name="" id="emailR" />
         <h4>Password</h4>
-        <input class="inpt" type="password" name="" id="passwordR" /><br />
+        <input class="inpt" type="password" name="" id="passwordR" />
         <button class="btn" id="signupR">Sign Up</button>
-        <h3 class="signin" style="cursor: pointer">SignIn</h3>
+        <h3
+          class="signin"
+          style="cursor: pointer; text-decoration: underline; color: blue"
+        >
+          SignIn
+        </h3>
       </div>
       <div class="overlay">
+        <a href="index.html">
+          <!-- <h1 class="guest">Stay as a guest</h1> -->
+          <button class="guest">Guest?</button>
+        </a>
         <img
           src="https://images.unsplash.com/photo-1595757816291-ab4c1cba0fc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
           alt=""
