@@ -1,12 +1,13 @@
 
-
+*{
+    overflow-x: hidden;
+    margin: 0;
+}
 .headContent {
     height: 326.93px;
-    width: 373.33px;
+    width: 100%;
     background-color: red;
     text-align: center;
-    padding-left: 20px;
-    
 }
 
 .headContent h1 {
@@ -59,9 +60,9 @@
 
 .card {
     width: 343px;
-    height: 343px;
+    height: auto;
     border-radius: 30px;
-    padding-bottom: 25px;
+   
 }
 
 .otCard {

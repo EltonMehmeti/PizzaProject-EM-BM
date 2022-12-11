@@ -64,7 +64,7 @@ body {
   padding: 20px;
 }
 
-#sP1 {
+.sP1 {
   color: #f43127;
   font-size: 18px;
   font-weight: 600;
@@ -73,7 +73,7 @@ body {
   margin-top: 20px;
 }
 
-#sH1 {
+.sH1 {
   margin: 0;
   font-size: 32px;
   font-weight: bold;
@@ -82,7 +82,7 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
-#sP2 {
+.sP2 {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -359,3 +359,4 @@ ul li{
     text-decoration: none;
     margin-top: 20px;
 }
+
