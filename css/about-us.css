@@ -1,4 +1,5 @@
 
+
 *{
     overflow-x: hidden;
     margin: 0;
@@ -8,88 +9,202 @@
     width: 100%;
     background-color: red;
     text-align: center;
+
+* {
+  overflow-x: hidden;
+}
+.headContent {
+  height: 326.93px;
+  width: 373.33px;
+  background-color: red;
+  text-align: center;
+  padding-left: 20px;
+
 }
 
 .headContent h1 {
-    color: white;
-    font-size: 50px;
-    padding-left: 0;
-    padding-top: 110px;
-    font-weight: bolder;
+  color: white;
+  font-size: 50px;
+  padding-left: 0;
+  padding-top: 110px;
+  font-weight: bolder;
 }
 
 .titulli {
-    padding: 0 12px;
-    display: block;
-    align-items: center;
-    text-align: center;
-
+  padding: 0 12px;
+  display: block;
+  align-items: center;
+  text-align: center;
 }
 
 .titulli h3 {
-    color: #f43127;
-    font-size: 16px;
-    line-height: 1;
-    font-weight: 600;
+  color: #f43127;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
 }
 
-.titulli h1{
-    color: #252525;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 8px;
+.titulli h1 {
+  color: #252525;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 8px;
 }
 
 .titulli p {
-    height: 102px;
-    font-size: 12px;
-    color: #555555;
-    line-height: 2;
+  height: 102px;
+  font-size: 12px;
+  color: #555555;
+  line-height: 2;
 }
 
 .mainSection {
-    padding: 120px 0;
+  padding: 120px 0;
 }
 
 .ourTeam {
-    margin-left: 25px;
-    justify-content: center;
-    margin-top: 15px;
+  margin-left: 25px;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .card {
+
     width: 343px;
     height: auto;
     border-radius: 30px;
    
+
+  width: 343px;
+  height: 343px;
+  border-radius: 30px;
+  padding-bottom: 25px;
+  overflow-y: hidden;
+
 }
 
 .otCard {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.otContainer {
+  background-color: #252525;
+  position: relative;
+  bottom: 85px;
+  height: 80px;
+  border-radius: 0 0 30px 30px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.otName {
+  color: #de3127;
+  font-size: 16px;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+.otDetails {
+  color: white;
+  line-height: 2;
+  font-size: small;
+}
+@media only screen and (min-width: 992px) {
+  /* Menu */
+  .HamMenu {
+    display: none;
+  }
+  .menulinksR {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    padding: 10px;
+    width: 150px;
+    margin-left: 150px;
+  }
+  .OrderButton {
+    background-color: whitesmoke;
+    color: red;
     border-radius: 30px;
-}
-
-.otContainer{
-    background-color: #252525;
-    position: relative;
-    bottom: 85px;
-    height: 80px;
-    border-radius: 0 0 30px 30px;
-    opacity: 0.9;
-    text-align: center;
-}
-
-.otName{
-    color: #de3127;
-    font-size: 16px;
-    padding-top: 15px;
-    font-weight: 600;
-}
-
-.otDetails{
+    font-weight: bold;
+    width: 143px;
+    height: 42px;
+    border: none;
+    margin-right: 300px;
+  }
+  :hover.links {
+    color: rgb(243, 245, 146);
+  }
+  /* Head COntent */
+  .headContent {
+    width: 100%;
+    background-image: linear-gradient(to bottom, red 45%, white);
+  }
+  .headContent > a,
+  h4 {
+    margin-left: 0px;
+    display: inline-block;
+    text-decoration: none;
     color: white;
-    line-height: 2;
-    font-size: small;
+  }
+  :hover > h4 {
+    color: rgb(243, 245, 146);
+  }
+  /* Our Team */
+  .ourTeam {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  /* Footer */
+  .footer {
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom, white, #fcc3c0);
+    gap: 40px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .footerLogo {
+    width: 200px;
+  }
+  .adress {
+    font-weight: 400;
+    color: grey;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .sc {
+    margin-top: 20px;
+    width: 10%;
+    align-self: center;
+  }
+  .FooterLinks {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    flex: 2;
+    align-items: flex-end;
+  }
+  .linksF {
+    text-decoration: none;
+    font-size: larger;
+    text-align: left;
+  }
 }
