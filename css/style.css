@@ -75,7 +75,7 @@ body {
   flex-direction: column;
 }
 
-#sP1 {
+.sP1 {
   color: #f43127;
   font-size: 18px;
   font-weight: 600;
@@ -85,7 +85,7 @@ body {
   text-align: center;
 }
 
-#sH1 {
+.sH1 {
   margin: 0;
   font-size: 32px;
   font-weight: bold;
@@ -95,7 +95,7 @@ body {
   text-align: center;
 }
 
-#sP2 {
+.sP2 {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -577,16 +577,19 @@ ul li {
 }
 
 #mcButton {
-  display: inline-block;
-  border: none;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
-  background: #f43127;
-  padding: 15px 30px;
-  line-height: 1.6;
-  letter-spacing: 1px;
-  text-decoration: none;
-  margin-top: 20px;
+
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #f43127;
+    padding: 15px 30px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-top: 20px;
 }
+
+

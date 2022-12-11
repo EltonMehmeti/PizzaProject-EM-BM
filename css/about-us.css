@@ -1,3 +1,15 @@
+
+
+*{
+    overflow-x: hidden;
+    margin: 0;
+}
+.headContent {
+    height: 326.93px;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+
 * {
   overflow-x: hidden;
 }
@@ -7,6 +19,7 @@
   background-color: red;
   text-align: center;
   padding-left: 20px;
+
 }
 
 .headContent h1 {
@@ -57,11 +70,18 @@
 }
 
 .card {
+
+    width: 343px;
+    height: auto;
+    border-radius: 30px;
+   
+
   width: 343px;
   height: 343px;
   border-radius: 30px;
   padding-bottom: 25px;
   overflow-y: hidden;
+
 }
 
 .otCard {
