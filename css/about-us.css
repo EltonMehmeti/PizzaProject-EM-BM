@@ -1,25 +1,13 @@
-
-
-*{
-    overflow-x: hidden;
-    margin: 0;
-}
-.headContent {
-    height: 326.93px;
-    width: 100%;
-    background-color: red;
-    text-align: center;
-
 * {
   overflow-x: hidden;
 }
+
 .headContent {
   height: 326.93px;
   width: 373.33px;
   background-color: red;
   text-align: center;
   padding-left: 20px;
-
 }
 
 .headContent h1 {
@@ -28,6 +16,13 @@
   padding-left: 0;
   padding-top: 110px;
   font-weight: bolder;
+}
+.headContent > a,
+h4 {
+  margin-left: 0px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
 }
 
 .titulli {
@@ -70,18 +65,11 @@
 }
 
 .card {
-
-    width: 343px;
-    height: auto;
-    border-radius: 30px;
-   
-
   width: 343px;
   height: 343px;
   border-radius: 30px;
   padding-bottom: 25px;
   overflow-y: hidden;
-
 }
 
 .otCard {
@@ -114,6 +102,19 @@
 }
 @media only screen and (min-width: 992px) {
   /* Menu */
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: red;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
+  }
   .HamMenu {
     display: none;
   }
