@@ -4,7 +4,9 @@
 
 .headContent {
   height: 326.93px;
-  width: 373.33px;
+  /* width: 373.33px;
+   */
+  width: 100%;
   background-color: red;
   text-align: center;
   padding-left: 20px;
