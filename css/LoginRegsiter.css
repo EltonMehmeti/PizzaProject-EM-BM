@@ -54,7 +54,7 @@ body {
 }
 .inpt {
   width: 25vh;
-  height: 3vh;
+  height: 2.5vh;
   border: none;
   border-radius: 10px;
   background: lightgrey;
@@ -96,15 +96,15 @@ img {
     justify-content: center;
     height: 100vh;
     flex-direction: column;
-    background: #e5ba73;
+    background: whitesmoke;
     overflow: hidden;
     flex-direction: column;
-    background-image: url("https://images.unsplash.com/photo-1611915365928-565c527a0590?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80");
+    background-image: url("https://images.unsplash.com/photo-1674188473558-53d2c4bec75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1447&q=80");
   }
   .main {
     position: relative;
-    height: 55vh;
-    width: 90vh;
+    height: 70vh;
+    width: 120vh;
     display: flex;
     flex-direction: row;
     border: 1px solid gainsboro;
@@ -113,10 +113,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
+    background-color: white;
   }
   .login {
-    height: 55vh;
-    width: 45vh;
+    height: 60vh;
+    width: 60vh;
     align-items: center;
     height: 100%;
     display: flex;
@@ -125,24 +127,29 @@ img {
     margin-left: 50px;
   }
   .register {
-    width: 45vh;
-    height: 55vh;
+    width: 60vh;
+    height: 60vh;
     align-items: center;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
   }
   .overlay {
     color: white;
-    height: 55vh;
-    width: 45vh;
+    height: 70vh;
+    width: 60vh;
     position: absolute;
     background: transparent;
-    left: 45vh;
-
+    left: 60vh;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     /* transform: translateX(45vh); */
-    z-index: 9;
+    z-index: 10;
   }
   .guest {
     width: 20vh;
@@ -155,7 +162,7 @@ img {
     position: absolute;
     padding: 10px;
     bottom: 45%;
-    margin-left: 6rem;
+    margin-left: 7rem;
     z-index: 10;
     color: white;
     font-size: large;
@@ -174,15 +181,48 @@ img {
   .signin,
   .signup {
     display: inline;
+    z-index: 1;
   }
-  .inpt {
+  /*  */
+  .input {
     width: 25vh;
     height: 3vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 0.8vw;
+    color: #fff;
+    background-color: rgb(28, 28, 30);
+    box-shadow: 0 0 0.4vw rgba(0, 0, 0, 0.5), 0 0 0 0.15vw transparent;
+    border-radius: 0.4vw;
     border: none;
-    border-radius: 10px;
-    background: lightgrey;
+    outline: none;
+    padding: 0.4vw;
+
+    transition: 0.4s;
   }
-  .btn {
+
+  .input:hover {
+    box-shadow: 0 0 0 0.15vw rgba(135, 207, 235, 0.186);
+  }
+
+  .input:focus {
+    box-shadow: 0 0 0 0.15vw skyblue;
+  }
+  /*  */
+
+  .btnSI {
+    margin-top: 2rem;
+    width: 15vh;
+    height: 3vh;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .btnSU {
     margin-top: 2rem;
     width: 15vh;
     height: 3vh;

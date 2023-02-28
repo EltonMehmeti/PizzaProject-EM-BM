@@ -1,0 +1,230 @@
+* {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1547414876-def1cc35dcbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+}
+/* .pizzaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.pizza-main {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+.pizzas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+.right {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.pizza-desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.left {
+}
+.pizzaImg {
+  width: 200px;
+}
+.pizza-desc {
+  font-size: 30px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  color: #5a5555;
+  padding: 8px;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 2000px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-start;
+}
+.scrollUp {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 1000px;
+  background-color: white;
+  border: 0.2px solid gray;
+  cursor: pointer;
+}
+.OrderButton {
+  background-color: whitesmoke;
+  color: red;
+  border-radius: 30px;
+  font-weight: bold;
+  width: 143px;
+  height: 42px;
+  border: none;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.input {
+  width: 5vh;
+  height: 3vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  color: black;
+  background-color: whitesmoke;
+  box-shadow: 0 0 0.4vw rgba(0, 0, 0, 0.5), 0 0 0 0.15vw transparent;
+  border-radius: 0.4vw;
+  border: none;
+  outline: none;
+  padding: 0.4vw;
+
+  transition: 0.4s;
+}
+
+.input:hover {
+  box-shadow: 0 0 0 0.15vw rgba(135, 207, 235, 0.186);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 0.15vw skyblue;
+}
+
+@media only screen and (min-width: 992px) {
+  .pizzas {
+    padding: 20px;
+    width: 150vh;
+    height: 70vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: white;
+    position: relative;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    left: 600px;
+  }
+  .left {
+    position: absolute;
+    left: 10px;
+  }
+  #titulli {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .pizza-desc {
+    font-size: 30px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    color: #5a5555;
+    padding: 8px;
+  }
+  .details {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 2000px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-start;
+  }
+  .scrollUp {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    background-color: white;
+    border: 0.2px solid gray;
+    cursor: pointer;
+  }
+  .OrderButton {
+    background-color: whitesmoke;
+    color: red;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 143px;
+    height: 42px;
+    border: none;
+    align-self: flex-start;
+    cursor: pointer;
+  }
+  .pizzaImg {
+    transform: rotate(360deg);
+    transition: 1s all ease;
+    width: 400px;
+    height: 400px;
+  }
+  .input {
+    width: 5vh;
+    height: 3vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 0.8vw;
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0 0 0.4vw rgba(0, 0, 0, 0.5), 0 0 0 0.15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+
+    transition: 0.4s;
+  }
+
+  .input:hover {
+    box-shadow: 0 0 0 0.15vw rgba(135, 207, 235, 0.186);
+  }
+
+  .input:focus {
+    box-shadow: 0 0 0 0.15vw skyblue;
+  }
+}

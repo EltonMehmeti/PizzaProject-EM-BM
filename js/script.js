@@ -54,13 +54,40 @@ btnmenu.addEventListener("click", function () {
 //     x--;
 //   }
 // });
+// Scroll to menu
+const menu = document.getElementById("menu");
+// const pizzaC = document.getElementById("pizzaC");
+menu.addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log("Scroll");
+  const href = this.getAttribute("src");
+  href.scrollIntoView({ behavior: "smooth" });
+});
+
+//
 const scrollup = document.querySelector(".scrollUp");
 window.addEventListener("scroll", (event) => {
   let scroll = this.scrollY;
-  console.log(scroll);
+  // console.log(scroll);
   if (scroll > 900) {
     scrollup.style.display = "block";
   } else if (scroll < 900) {
     scrollup.style.display = "none";
+  }
+});
+
+// cart
+const shoppingCart = document.querySelector(".shopping-cart");
+
+const cart = document.querySelector(".cart");
+
+shoppingCart.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (cart.classList.contains("cart")) {
+    cart.classList.remove("cart");
+    cart.classList.add("cart-active");
+  } else if (cart.classList.contains("cart-active")) {
+    cart.classList.remove("cart-active");
+    cart.classList.add("cart");
   }
 });
